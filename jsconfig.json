@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
+    "module": "nodenext",        // Add this line to match moduleResolution
     "moduleResolution": "nodenext",
     "target": "ES2021",
     "checkJs": true,
     "allowJs": true
-  }
+  },
+  "include": ["src/**/*"],       // Adjust the include path to match your project structure
+  "exclude": ["node_modules"]    // Exclude node_modules to avoid including unnecessary files
 }
